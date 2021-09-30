@@ -7,27 +7,76 @@
     <title>FORM</title>
 </head>
 <body>
-    <form>
+    <form autocomplete="on">
+        <fieldset>
+            <legend>Personal Profile</legend>
         <label for="firstname">Firstname</label> <br>
-        <input type="text" name="Firstname" id="firstname" placeholder="Write your Firstname"><br>
+        <input type="text" name="Firstname" id="firstname" placeholder="Write your Firstname" value="Onyekachi" autofocus required><br>
         <label for="Lastname">Lastname</label> <br>
-        <input type="text" name="Lastname" id="Lastname" placeholder="Write your Lastname"><br>
+        <input type="text" name="Lastname" id="Lastname" placeholder="Write your Lastname" value="Mgbanwune" required><br>
         <label for="Email">Email</label> <br>
-        <input type="text" name="Email" id="Email" placeholder="Write your Email"> <br>
+        <input type="text" name="Email" id="Email" placeholder="Write your Email" value="standbymii@yahoo.com"> <br>
         <label for="Phonenumber">Phonenumber</label> <br>
-        <input type="number" name="Phonenumber" id="Phonenumber" placeholder="Phone number">
+        <input type="number" name="Phonenumber" id="Phonenumber" placeholder="Phone number" value="08038412260">
         <label for="age"><h3>Choose you age</h3></label>
-        <select name="age" id="age" size="5" multiple>
+        <select name="age" id="age" >
             <option value=""></option>
             <option value="35">35</option>
             <option value="40">40</option>
             <option value="45">45</option>
-            <option value="50">50</option>
+            <option value="50">50</option> <br>
+            
+        </select><br><br>
+        <input type="radio" name="Gender">
+        <label for="Male">Male</label><br>
+        <input type="radio" name="Gender">
+        <label for="Female">Female</label><br>
+        <input type="radio" name="Gender">
+        <label for="Other">Other</label><br><br>
+        <input type="checkbox" name="Vehicle">
+        <label for="Vehicle">I have a bike</label><br>
+        <input type="checkbox" name="Gender">
+        <label for="Vehicle">I have car</label><br>
+        <input type="checkbox" name="Gender">
+        <label for="Vehicle">I have a boat</label><br><br>
+        <label for="color">Select your favourite colour</label><br>
+        <input type="color"><br><br>
+        <label for="DOB">Choose you Birthday</label>
+        <input type="date"><br><br>
+        <input type="datetime-local"><br><br>
+        <input type="file"><br>
+        <br>
+        <input type="month"><br><br>
+        <input type="tel" name="Phone number" pattern="[2-4]{3}-[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="234-xxx-xxx-xxxx" required ><br><br>
+        
+        <input type="submit" value="Goodbye">
+        <input type="reset">
 
+    </fieldset>
+    <fieldset>
+        <legend>Biography</legend>
 
-        </select>
+        <label>Describe Yourself</label><br>
+        <textarea name="Describe" placeholder="Write about yourself" rows="10" cols="40" style="width: 200px;border-radius: 20px; color: brown; border-style:ridge; border-color: rgb(238, 12, 12); border-width: 10px;" ></textarea><br><br> 
+        <input type="submit" value="Login">
+    </fieldset>
+    
+
         
     </form>
+
+    <form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+        0
+        <input type="range" id="a" name="a" value="50">
+        100+
+        <input type="number" id="b" name="b" value="50">
+        =
+        <output name="x" for="a b"></output><br><br>
+        <input type="password"><br><br>
+        <input type="submit" value="We move"> 
+
+    </form>
+</body>
     
 </body>
 </html>
